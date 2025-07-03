@@ -3,8 +3,8 @@ provider "aws" {
 }
 
 resource "aws_instance" "example" {
-  ami           = var.ami_id
-  instance_type = var.instance_type
+  ami           = ami-0d03cb826412c6b0f
+  instance_type = t2.micro
 
   tags = {
     Name = "GitHub-Actions-EC2"
